@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+<xs:element name="examen" type="complexExamen"/>
+
+<xs:complexType name="complexExamen" mixed="true">
+    <xs:sequence>
+        <xs:element name="pais" type="complexPais" maxOccurs="unbounded"/>
+    </xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="complexPais">
+    <xs:simpleContent>
+        <xs:extension base="xs:string">
+            <xs:attribute name="decoracion" use="required"/>
+        </xs:extension>
+    </xs:simpleContent>
+</xs:complexType>
+
+
+<!--<xs:complexType name="complexExamen" mixed="true">
+    <xs:sequence>
+        <xs:element name="cancion" type="complexCancion"/>
+    </xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="complexCancion">
+    <xs:simpleContent>
+        <xs:extension base="xs:string">
+            <xs:attribute name="numeros" type="simpleA" use="required"/>
+        </xs:extension>
+    </xs:simpleContent>
+</xs:complexType>
+
+<xs:simpleType name="simpleA">
+    <xs:restriction base="xs:string">
+        <xs:enumeration value="par"/>
+        <xs:enumeration value="impar"/>
+    </xs:restriction>
+</xs:simpleType>-->
+
+
+
+
+
+<!--<xs:complexType name="complexExamen" mixed="true">
+    <xs:sequence>
+        <xs:element name="cancion" type="complexCancion"/>
+    </xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="complexCancion">
+    <xs:attribute name="duracion" type="simpleA" use="required"/>
+</xs:complexType>
+
+<xs:simpleType name="simpleA">
+    <xs:restriction base="xs:decimal">
+        <xs:minInclusive value="250"/>
+        <xs:maxInclusive value="310"/>
+    </xs:restriction>
+</xs:simpleType>-->
+
+<!--<xs:complexType name="complexExamen" mixed="true">                                                                           
+       <xs:sequence>
+            <xs:element name="interprete" type="complexInterprete"/>
+       </xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="complexInterprete">
+    <xs:simpleContent>
+        <xs:extension base="xs:string">                                                                        
+            <xs:attribute name="genero" type="simpleGenero" use="required"/>
+        </xs:extension>
+    </xs:simpleContent>
+</xs:complexType>
+
+<xs:simpleType name="simpleGenero">                                                                           
+    <xs:restriction base="xs:string">        
+        <xs:enumeration value="Rock"/>
+        <xs:enumeration value="Pop"/>
+    </xs:restriction>         
+</xs:simpleType>-->
+
+
+
+<!--<xs:complexType name="complexExamen" mixed="true">
+<xs:sequence>      
+    <xs:element name="cancion" type="complexCancion"/>
+</xs:sequence>       
+</xs:complexType>
+
+<xs:complexType name="complexCancion">                                                                           
+    <xs:attribute name="duracion" type="simpleAtributo" use="required"/>        
+</xs:complexType>
+
+<xs:simpleType name="simpleAtributo">                                                                           
+    <xs:restriction base="xs:decimal">        
+            <xs:minInclusive value="250"/>
+            <xs:maxInclusive value="300"/>
+    </xs:restriction>         
+</xs:simpleType> Examen practico FC 2016 -->
+
+
+
+
+
+
+
+<!--<xs:complexType name="complexExamen" mixed="true">                                                                           
+       <xs:sequence>
+            <xs:element name="interprete" type="complexInterprete"/>
+       </xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="complexInterprete">
+    <xs:simpleContent>
+        <xs:extension base="xs:string">                                                                        
+            <xs:attribute name="genero" type="xs:string" use="required"/>
+        </xs:extension>
+    </xs:simpleContent>
+</xs:complexType>--> <!-- Octubre 2018 -->
+
+</xs:schema>
