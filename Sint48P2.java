@@ -322,7 +322,8 @@ public class Sint48P2 extends HttpServlet
                 }                                
             }
         }
-        //resXml.add(comentario.trim());        
+        //resXml.add(comentario.trim());
+                
     }
 
     public void doHtmlF01(HttpServletResponse res)throws IOException
